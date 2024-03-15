@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://mymattercenter.sharepoint.com/sites/OGC-Albuquerque/MatterDocuments/Forms/AllItems.aspx?isAscending=false&id=%2Fsites%2FOGC%2DAlbuquerque%2FMatterDocuments%2FALB%2D23%2D276%2D62424115&sortField=Modified&viewid=861445ba%2Da528%2D4e87%2Db856%2Dfe275cbe9f40",
+      "customActions": {
+        "b5cd9c92-4656-407f-83cf-81ebfae507bd": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    },
+    "aiChat": {
+      "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
+      "customActions": {
+        "b5cd9c92-4656-407f-83cf-81ebfae507bd": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    }
+  }
+}
