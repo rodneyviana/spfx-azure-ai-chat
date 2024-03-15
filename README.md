@@ -33,8 +33,8 @@ This project leverages the amazing chatbot react component [deep-chat](https://g
 
 | Version | Date             | Comments        |
 | ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
+| 1.0.0.0     | March 22, 2024   | Created repository and LICENSE  |
+| 1.0,1.0     | March 22, 2024 | First commit |
 
 ## Disclaimer
 
