@@ -26,7 +26,7 @@ export async function pdfToText(url: string): Promise<string> {
 }
 */
 console.log('started setting sp!');
-let sp: SPFI; // = spfi().using(DefaultInit());
+let sp: SPFI;
 
 export function SetSiteContext(context: ListViewCommandSetContext ): void {
   sp = spfi().using(SPFx(context));
@@ -139,10 +139,6 @@ try {
 }
 }
 
-
-
-
-
 let g_blockFlag: boolean;
 export function setBlockNavigation(block: boolean): void {
   g_blockFlag = block;
@@ -182,9 +178,6 @@ export async function readPropertyBag(propertyBagName: string): Promise<string |
   }
 
 }
-
-
-
 
 export async function updatePropertyBagValue(context: ListViewCommandSetContext, key: string, value: string): Promise<void> {
     const options: ISPHttpClientOptions = {
