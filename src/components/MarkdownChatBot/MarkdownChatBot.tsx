@@ -192,6 +192,32 @@ export class MarkdownChatBot extends React.Component<
               "api-key": getChatKey(),
               "Content-Type": "application/json",
             },
+          }}
+          directConnection={{
+            openAI: {
+              chat: {
+              max_tokens: 4000,
+              temperature: 0.6,
+              top_p: 1,
+              system_prompt: messages[0].content
+              },
+              key: getChatKey(),
+              
+              
+            }}
+          }
+          textInput={{ placeholder: { text: "Ask me questions about the document..." } }}
+          initialMessages={this.initialMessages}
+          stream={true}
+        />
+        )}
+      </div>
+    );
+  }
+}
+
+/*
+
             handler: async (body, signals) => {
               try {
                 body.messages.forEach((value: { role: string, text: string}) => {
@@ -250,18 +276,6 @@ export class MarkdownChatBot extends React.Component<
                 signals.onResponse({ error: "Error" }); // displays an error message
               }
             },
-          }}
-          textInput={{ placeholder: { text: "Ask me questions about the document..." } }}
-          initialMessages={this.initialMessages}
-        />
-        )}
-      </div>
-    );
-  }
-}
-
-/*
-
 
         <DeepChat
           style={{

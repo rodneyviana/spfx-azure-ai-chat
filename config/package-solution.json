@@ -3,7 +3,7 @@
   "solution": {
     "name": "spfx-azure-ai-chat-client-side-solution",
     "id": "95d02a9f-1172-42f1-bfb1-26748f17e7c8",
-    "version": "1.0.1.0",
+    "version": "1.0.2.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
